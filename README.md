@@ -1,2 +1,3 @@
-# DarkMode
+#  Cara Membuat Fitur Mode Gelap Asli di Blogger
+<img alt="Cara Membuat Fitur Mode Gelap Asli di Blogger" data-original-height="428" data-original-width="800" src="https://1.bp.blogspot.com/-XKFvqRK84C8/YA28E0D_9sI/AAAAAAAAA6c/pf0E5dBZQEAqJNKIY0EWvzgzX1H6jAQdQCLcBGAsYHQ/w320-h171/darkmode.gif" title="Cara Membuat Fitur Mode Gelap Asli di Blogger" width="320" height="171" border="0">
 <b>codinglan</b> Mode gelap (<i>dark mode</i>) adalah tampilan untuk sebutan front-end yang didesain untuk antarmuka pengguna (UI) menggunakan skema warna dari tampilan mode terang ke mode gelap. Pada mode ini, biasanya warna hitam atau abu-abu digunakan sebagai warna background utama <a href="https://codinglan.blogspot.com/2021/01/cara-membuat-fitur-mode-gelap-asli-di.html"><b>READ MORE</b></a>
