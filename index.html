@@ -1,0 +1,40 @@
+<div style="text-align: left;"><div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-XKFvqRK84C8/YA28E0D_9sI/AAAAAAAAA6c/pf0E5dBZQEAqJNKIY0EWvzgzX1H6jAQdQCLcBGAsYHQ/s800/darkmode.gif" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="Cara Membuat Fitur Mode Gelap Asli di Blogger" border="0" data-original-height="428" data-original-width="800" height="171" src="https://1.bp.blogspot.com/-XKFvqRK84C8/YA28E0D_9sI/AAAAAAAAA6c/pf0E5dBZQEAqJNKIY0EWvzgzX1H6jAQdQCLcBGAsYHQ/w320-h171/darkmode.gif" title="Cara Membuat Fitur Mode Gelap Asli di Blogger" width="320" /></a></div><br /></div><div style="text-align: left;"><b>codinglan</b> Mode gelap (<i>dark mode</i>) adalah tampilan untuk sebutan front-end yang didesain untuk antarmuka pengguna (UI) menggunakan skema warna dari tampilan mode terang ke mode gelap. Pada mode ini, biasanya warna hitam atau abu-abu digunakan sebagai warna background utama.&nbsp;</div><div style="text-align: left;"><br /></div><div style="text-align: left;">Dengan fitur mode gelap, fokus kita pada layar menjadi lebih mudah dan otomatis kelelahan atau ketegangan mata berkurang. Ini juga diyakini oleh Apple. Saat merilis mode gelap MacOS Mojave, Apple mengatakan bahwa mode ini dapat membantu konsentrasi karena lebih nyaman di mata.&nbsp;</div><div style="text-align: left;"><br /></div><div style="text-align: left;">Seperti diketahui, rata-rata waktu pengguna internet mengakses dunia maya adalah pada malam hari. Itulah mengapa fitur <i>Dark Mode</i> dibutuhkan untuk mengurangi beban cahaya pada mata. Bahkan developer seperti YouTube, Instagram, Facebook telah menambahkan fitur ini ke situs mereka karena mereka paham betapa sibuknya netizen menggunakan aplikasi online saat tidur.</div><div style="text-align: left;"><br /></div><div style="text-align: left;">Baca Juga : <b><a href="https://codinglan.blogspot.com/2021/01/cara-memodifikasi-tampilan-tema.html">Cara memodifikasi tampilan tema Contempo di Blogger</a></b></div><div style="text-align: left;"><br /></div><div style="text-align: left;"><b>Cara Membuat Fitur Mode Gelap&nbsp;</b></div><div style="text-align: left;"><br /></div><div style="text-align: left;">Bagi Anda yang ingin melakukan hal serupa dengan menambahkan fitur Dark Mode yang dilengkapi dengan tombol on / off pada blog pribadi, langkah-langkahnya cukup mudah seperti yang dijelaskan pada tutorial berikut ini.</div><div style="text-align: left;"><br /></div><div style="text-align: left;"><span style="color: #b45f06;"><b>Langkah 1 :</b></span> Buka <i>dashboard</i> blogger, silahkan pilih menu tema, dan klik EDIT HTML. Setelah itu cari kode&nbsp; ]]&gt;&lt;/b:skin&gt; dengan menekan CTRL+F, ketikkan kata kunci 'skin' lalu enter dan cari kodenya. Setelah itu <i>copy</i> kode di bawah ini dan paste di atas kode&nbsp; <span style="background-color: #04ff00;"><b>]]&gt;&lt;/b:skin&gt;</b></span><br /></div>
+<pre><code>
+&lt;style&gt;
+/* DARK MODE [codinglan.blogspot.com]*/
+.switch {position:relative;display:inline-block;width:60px;height:20px}
+.switch input {display:none;}
+.slider {position:absolute;top:0;left:0;right:0;bottom:0;cursor:pointer;background-color:#bdc3c7;-webkit-transition:.4s;transition:.4s}
+.slider:before {position:absolute;content:"";height:20px;width:20px;background-color:white;-webkit-transition:.4s;transition:.4s}
+input:checked + .slider {background-color:#000}
+input:focus + .slider {box-shadow: 0 0 1px #2196F3}
+input:checked + .slider:before {-webkit-transform: translateX(40px);-ms-transform: translateX(40px);transform: translateX(40px)}
+.slider.round {border-radius:20px}
+.slider.round:before {border-radius:50%}
+.Night
+{background-color:#000!important}
+.Night #wrapper,
+.Night #post-wrapper article
+{background-color:#1d2129!important}
+.Night #header .title,
+.Night #header .title a,
+.Night #header .description,
+.Night #post-wrapper article
+ {color:#E0E0E0!important}
+&lt;/style&gt;
+</code></pre><span style="color: #b45f06;"><b>Langkah 2 </b>:</span> Selanjutnya silahkan cari kode &lt;/head&gt; dan <i>copy</i> kode di bawah ini bagi yang belum menambahkan (install) jquery.min.js dan paste di atas kode <span style="background-color: #04ff00;"><b>&lt;/head&gt;</b></span>
+<pre><code>
+&lt;script src='//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'&gt;&lt;/script&gt;
+</code></pre><span style="color: #b45f06;"><b>Langkah 3 :</b></span> Salin kode javascript di bawah dan paste di atas kode <span style="background-color: #04ff00;"><b>&lt;/body&gt;</b></span>
+<pre><code>
+&lt;script&gt;//&lt;![CDATA[
+$("#Night").click(function(){
+$("body").toggleClass('Night');
+});
+//]]&gt;&lt;/script&gt;
+</code></pre><span style="color: #b45f06;"><b>Langkah 4 :</b></span> Setelah selesai, simpan tema yang telah dimodifikasi diatas. Lalu beralih ke tata letak tambahkan <i>gadget</i> tambah HTML/JavaScript dan <i>paste</i> kode HTML di bawah ini ke kotak konten. Lalu simpan dan <i>save</i> di menu tata letak tersebut.&nbsp; <br />
+<pre><code>
+&lt;label class='switch' for='Night'&gt;
+&lt;input id='Night' type='checkbox'/&gt;
+&lt;div class='slider round'/&gt;&lt;/label&gt;
+</code></pre><div style="text-align: left;">Kode diatas merupakan tombol <i>switch on/off</i> yang nantinya bisa digunakan untuk merubah tema normal menjadi mode gelap. Ini dapat ditempatkan di mana saja, tetapi untuk tujuan praktis, tambahkan <i>gadget</i> di <i>dashboard </i>melalui Tata Letak &gt; Tambah Gadget &gt; Pilih HTML/Javascript.&nbsp;</div><div style="text-align: left;"><br /></div><div style="text-align: left;"><b>Kesimpulan&nbsp;</b></div><div style="text-align: left;"><br /></div><div style="text-align: left;">Ini adalah tutorial untuk menambahkan fitur <i>Dark Mode</i> ke blog lengkap dengan tombolnya. Jika Anda mengikuti langkah-langkahnya dengan benar, maka fitur mode gelap ini akan berfungsi dengan baik di blog Anda.<br /></div><div style="text-align: left;"><br /></div><div style="text-align: left;">Jika fitur tidak aktif seperti yang diharapkan, misalnya warna tema tidak berubah sebagaimana mestinya, maka perlu diketahui bahwa setiap template blog memiliki struktur yang berbeda. Sehingga dibutuhkan pengetahuan tentang CSS agar blog benar-benar dapat mengaplikasikan fitur ini dengan sempurna.<br /></div>
